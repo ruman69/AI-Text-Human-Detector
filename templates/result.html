@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analysis Result</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <h1>AI vs Human Text Predictor</h1>
+</header>
+<main>
+    <h2>Result: {{ prediction }}</h2>
+    <p>AI Confidence: {{ ai_conf }}%</p>
+    <p>Human Confidence: {{ human_conf }}%</p>
+    <img src="data:image/png;base64,{{ chart_data }}" alt="Pie Chart">
+    <a href="/" class="try-again">Try Again</a>
+</main>
+</body>
+</html>
 
