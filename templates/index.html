@@ -1,1 +1,21 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI vs Human Text Predictor</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <h1>AI vs Human Text Predictor</h1>
+</header>
+<main>
+    <p>Type or paste any text below and click "Analyze" to check if it's AI-generated or human-written.</p>
+    <form method="POST">
+        <textarea name="user_text" placeholder="Enter your text here..." required></textarea>
+        <button type="submit">Analyze</button>
+    </form>
+</main>
+</body>
+</html>
